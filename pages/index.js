@@ -53,12 +53,12 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl text-center py-5">Hakuna Matata</h3>
-            <p className="text-md text-center py-2 leading-8 text-gray-80">
+            <h3 className="text-3xl text-center py-5 dark:text-white">Hakuna Matata</h3>
+            <p className="text-md text-center py-2 leading-8 text-gray-80 dark:text-white">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
-            <p className="text-md text-center py-2 leading-8 text-gray-800">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+            <p className="text-md text-center py-2 leading-8 text-gray-800 dark:text-white">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
           </div>
           <div className="lg:flex gap-10 ">
             <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-700">
