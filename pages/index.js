@@ -8,8 +8,10 @@ import web2 from './images/web2.png';
 import web3 from './images/web3.png';
 import web4 from './images/web4.png';
 import {BsFillMoonStarsFill, BsDiscord} from "react-icons/bs";
-import { AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
-import styles from '../styles/Home.module.css';
+import { AiFillLinkedin, AiFillGithub, AiOutlineLink} from 'react-icons/ai'
+import { SiJavascript, SiHtml5,
+         SiCss3, SiReact, 
+         SiNodedotjs, SiGithub} from 'react-icons/si'
 import { useState } from "react";
 
 export default function Home() {
@@ -25,21 +27,21 @@ export default function Home() {
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
-          <h1 className="text-xl font-burtons dark:text-white">PORTOFOLIO</h1>
+          <h1 className="text-xl font-tour font-bold dark:text-white">PORTOFOLIO</h1>
           <ul className="flex items-center">
             <li>
-              <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl"/>
+              <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-white"/>
             </li>
-            <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
+            <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href='https://pdfhost.io/v/a04I04NcO_resume'> <b>Resume</b> </a></li>
           </ul>
           </nav>
           <div className="text-center p-10 dark:text-white">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl ">Nastase Valentin</h2>
+            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl "><b>Nastase Valentin</b></h2>
             <h3 className="text-md py-5 leading-8 text-grey-800 md:text-xl max-w-xl mx-auto ">FrontEnd Developer</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p><i>“Everyone in this country should learn how to program because it teaches you how to think” – Steve Jobs.</i></p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 font-medium md:text-6xl dark:text-white">
-            <BsDiscord/>
+            <BsDiscord href='https://app.netlify.com/teams/valimihai154/overview'/>
             <AiFillGithub/>
             <AiFillLinkedin/>
           </div>
@@ -53,68 +55,114 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl text-center py-5 dark:text-white">Hakuna Matata</h3>
-            <p className="text-md text-center py-2 leading-8 text-gray-80 dark:text-white">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+            <h3 className="text-3xl text-center py-5 dark:text-white"><b>Hello World</b></h3>
+            <p className="text-md text-center mx-auto py-2 max-w-4xl leading-8 text-gray-800 dark:text-white">
+            I am a driven individual with a strong desire for personal and professional growth, fueled by my passion for coding and problem-solving.
+            My sense of humor helps keep things light and enjoyable in the workplace.
             </p>
-            <p className="text-md text-center py-2 leading-8 text-gray-800 dark:text-white">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
           </div>
-          <div className="lg:flex gap-10 ">
+          <div className="lg:flex justify-around gap-10 mx-auto">
             <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-700">
-              <Image src={mancode} height={100} width={200} className=" mx-auto"/>
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">My Projects</h3>
-              <p className="py-2 dark:text-white">Creating personal projects to show my abilities in the modern world in technology</p>
-              <h4 className="p4 text-teal-600">This is what i know </h4>
-              <p className="text-gray-800 py-1 dark:text-white">Html & Css</p>
-              <p className="text-gray-800 py-1 dark:text-white">Javascript & Node.js</p>
-              <p className="text-gray-800 py-1 dark:text-white">Bootstrap & Photoshop</p>
+              <Image src={mancode} height={100} width={200} className="mx-auto"/>
+              <hr/>
+              <h3 className="text-2xl font-medium pt-8 pb-2 dark:text-white"><b>Skills</b></h3>
+              <div className='text-lg grid text-neutral-500 grid-cols-2 justify-center gap-16 py-3  font-medium md:text-6xl dark:text-white'>
+               <a className="p4 rounded-lg dark:text-white">
+                <SiHtml5 className='h-10 w-10 mx-auto'/>
+                <p className='text-4xl'>Html</p>
+               </a> 
+               <a className="p4  rounded-lg dark:text-white">
+                <SiJavascript className='h-10 w-10 mx-auto'/>
+                <p className='text-3xl'>Javascript</p>
+               </a> 
+                
+               <a className="p4  rounded-lg dark:text-white">
+               <SiCss3 className='h-10 w-10 mx-auto'/>
+                <p className='text-4xl'>Css3</p>
+               </a> 
+                
+               <a className="p4  rounded-lg dark:text-white">
+                <SiReact className='h-10 w-10 mx-auto'/>
+                <p className='text-4xl'>React</p>
+               </a>
+
+               <a className="p4  rounded-lg dark:text-white">
+                <SiNodedotjs className='h-10 w-10 mx-auto'/>
+                <p className='text-4xl'>Node.js</p>
+               </a>
+
+               <a className="p4 rounded-lg dark:text-white">
+                <SiGithub className='h-10 w-10 mx-auto'/>
+                <p className='text-4xl'>Github</p>
+               </a>
+              </div> 
             </div>
 
             <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-700">
               <Image src={aboutme} height={100} width={200} className=" shadow-xl overflow-hidden rounded-full mx-auto"/>
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">My Projects</h3>
-              <p className="py-2 dark:text-white">Creating personal projects to show my abilities in the modern world in technology</p>
-              <h4 className="p4 text-teal-600 ">This is what i know </h4>
-              <p className="text-gray-800 py-1 dark:text-white">Html & Css</p>
-              <p className="text-gray-800 py-1 dark:text-white">Javascript & Node.js</p>
-              <p className="text-gray-800 py-1 dark:text-white">Bootstrap & Photoshop</p>
+              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white"><b>About Me</b></h3>
+              <hr/>
+              <p className="py-2 dark:text-white mx-auto max-w-sm" >I am a motivated and passionate software developer with a strong desire to learn and grow in my field.
+                                                              I have been coding for 1 and a half years, and I am constantly looking for new challenges and opportunities to improve my skills.
+                                                              In my free time, I enjoy listening to music and playing the piano and cooking. I also love spending time outdoors, whether it's going for a walk or a hike.</p>
+              <p className="py-2 dark:text-white  mx-auto max-w-sm" >I am always looking for ways to further my personal growth, whether it's through learning new technologies or picking up new hobbies.
+                                                              I believe that personal growth is essential for professional development, and I am dedicated to continually learning and improving.</p>
+               <hr/>
             </div>
           </div>
         
 
         {/* section three */}
          
-         <div>
-           <h3 className="text-3xl py-1 dark:text-white">Portofolio</h3>
+         <div className='text-center'>
+           <h3 className="text-3xl py-1 mx-auto dark:text-white"><b>PORTOFOLIO</b></h3>
 
-           <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-             Contrary to popular belief, Lorem Ipsum is not simply random text. 
-              It has roots in a piece of classical Latin literature from 45 BC
+           <p className="text-md py-2 pb-10 leading-8 text-gray-800 dark:text-white">
+             Further below are my projects ... go and take a look  
            </p>
 
-           <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-             Contrary to popular belief, Lorem Ipsum is not simply random text. 
-              It has roots in a piece of classical Latin literature from 45 BC
-            </p>
          </div>
 
 
         <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
           <div className="basis-1/2 flex-1">
-            <Image src={web1}  className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
+            <Image src={web1}  className="hover:shadow-[0_35px_60px_-15px_rgba(0,255,255)] rounded-lg object-cover" width={'100%'} height={'100%'} />
+            <a href="www.google.com">
+             <AiFillGithub/>
+            </a> 
+            <a href="www.google.com">
+             <AiOutlineLink/>
+            </a> 
           </div>
 
           <div className="basis-1/2 flex-1">
-            <Image src={web2} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
+            <Image src={web2} className="hover:shadow-[0_35px_60px_-15px_rgba(0,255,255)] rounded-lg object-cover" width={'100%'} height={'100%'} />
+            <a href="www.google.com">
+             <AiFillGithub/>
+            </a> 
+            <a href="www.google.com">
+             <AiOutlineLink/>
+            </a> 
           </div>
 
           <div className="basis-1/2 flex-1">
-            <Image src={web3} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
+            <Image src={web3} className="hover:shadow-[0_35px_60px_-15px_rgba(0,255,255)] rounded-lg object-cover" width={'100%'} height={'100%'} />
+            <a href="www.google.com">
+             <AiFillGithub/>
+            </a> 
+            <a href="www.google.com">
+             <AiOutlineLink/>
+            </a> 
           </div>
 
           <div className="basis-1/2 flex-1">
-            <Image src={web4} className=" rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
+            <Image src={web4} className="hover:shadow-[0_35px_60px_-15px_rgba(0,255,255)] rounded-lg object-cover" width={'100%'} height={'100%'} />
+            <a href="www.google.com">
+             <AiFillGithub/>
+            </a> 
+            <a href="www.google.com">
+             <AiOutlineLink/>
+            </a> 
           </div>
         </div> 
          </section>

@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+
+
 module.exports = {
   darkMode:"class",
   content: [
@@ -9,8 +12,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        burtons: "burtons",
-        sans: ["Open Sans", "sans-serif"],
+        'tour': ['ubuntu-mono', 'Ubuntu', 'sans-serif'],
       },
     },
   },
