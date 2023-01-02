@@ -1,3 +1,4 @@
+
 import Head from 'next/head';
 import Image from 'next/image';
 import poza from './images/poza_profil.jpg';
@@ -24,7 +25,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gradient-to-r from-gray-900 via-indigo-900 to-gray-900">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
           <h1 className="text-xl font-tour font-bold dark:text-white">PORTOFOLIO</h1>
@@ -41,9 +42,15 @@ export default function Home() {
             <p><i>“Everyone in this country should learn how to program because it teaches you how to think” – Steve Jobs.</i></p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 font-medium md:text-6xl dark:text-white">
-            <BsDiscord href='https://app.netlify.com/teams/valimihai154/overview'/>
-            <AiFillGithub/>
-            <AiFillLinkedin/>
+            <a href="https://www.discordapp.com/users/485149099025498117">
+             <BsDiscord />
+            </a> 
+            <a href="https://github.com/V4L3N7Y">
+             <AiFillGithub/>
+            </a> 
+            <a href="https://www.linkedin.com/in/valentin-n%C4%83stase-509b811ba/">
+             <AiFillLinkedin/>
+            </a>
           </div>
           
             <div className="relative mx-auto overflow-hidden rounded-full bg-gray-600 w-60 h-70 lg:w-80 mt-20 ">
@@ -53,7 +60,7 @@ export default function Home() {
         </section>
         {/* section two */}
 
-        <section>
+        <section >
           <div>
             <h3 className="text-3xl text-center py-5 dark:text-white"><b>Hello World</b></h3>
             <p className="text-md text-center mx-auto py-2 max-w-4xl leading-8 text-gray-800 dark:text-white">
@@ -62,43 +69,45 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex justify-around gap-10 mx-auto">
-            <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-700">
+            <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-900">
               <Image src={mancode} height={100} width={200} className="mx-auto"/>
               <hr/>
               <h3 className="text-2xl font-medium pt-8 pb-2 dark:text-white"><b>Skills</b></h3>
               <div className='text-lg grid text-neutral-500 grid-cols-2 justify-center gap-16 py-3  font-medium md:text-6xl dark:text-white'>
-               <a className="p4 rounded-lg dark:text-white">
+             
+               <a className="dark:text-white">
                 <SiHtml5 className='h-10 w-10 mx-auto'/>
                 <p className='text-4xl'>Html</p>
                </a> 
-               <a className="p4  rounded-lg dark:text-white">
+               <a className="dark:text-white">
                 <SiJavascript className='h-10 w-10 mx-auto'/>
                 <p className='text-3xl'>Javascript</p>
                </a> 
                 
-               <a className="p4  rounded-lg dark:text-white">
+               <a className="dark:text-white">
                <SiCss3 className='h-10 w-10 mx-auto'/>
                 <p className='text-4xl'>Css3</p>
                </a> 
                 
-               <a className="p4  rounded-lg dark:text-white">
+               <a className="dark:text-white">
                 <SiReact className='h-10 w-10 mx-auto'/>
                 <p className='text-4xl'>React</p>
                </a>
 
-               <a className="p4  rounded-lg dark:text-white">
+               <a className="dark:text-white">
                 <SiNodedotjs className='h-10 w-10 mx-auto'/>
                 <p className='text-4xl'>Node.js</p>
                </a>
 
-               <a className="p4 rounded-lg dark:text-white">
+               <a className="dark:text-white">
                 <SiGithub className='h-10 w-10 mx-auto'/>
                 <p className='text-4xl'>Github</p>
                </a>
+
               </div> 
             </div>
 
-            <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-700">
+            <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-900">
               <Image src={aboutme} height={100} width={200} className=" shadow-xl overflow-hidden rounded-full mx-auto"/>
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white"><b>About Me</b></h3>
               <hr/>
@@ -115,10 +124,10 @@ export default function Home() {
         {/* section three */}
          
          <div className='text-center'>
-           <h3 className="text-3xl py-1 mx-auto dark:text-white"><b>PORTOFOLIO</b></h3>
+           <h3 className="text-3xl py-1 mx-auto dark:text-white"><b>PROJECTS</b></h3>
 
            <p className="text-md py-2 pb-10 leading-8 text-gray-800 dark:text-white">
-             Further below are my projects ... go and take a look  
+             [Below are my projects. Please take a look:]  
            </p>
 
          </div>
@@ -127,42 +136,50 @@ export default function Home() {
         <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
           <div className="basis-1/2 flex-1">
             <Image src={web1}  className="hover:shadow-[0_35px_60px_-15px_rgba(0,255,255)] rounded-lg object-cover" width={'100%'} height={'100%'} />
-            <a href="www.google.com">
-             <AiFillGithub/>
+           <div className='flex flex-row mt-10 justify-center gap-10 dark:text-white'>
+            <a href='https://github.com/V4L3N7Y/OnlineShop'>
+             <AiFillGithub className='w-10 h-10'/>
             </a> 
-            <a href="www.google.com">
-             <AiOutlineLink/>
+            <a href="https://vali-onlineshop.netlify.app">
+             <AiOutlineLink className='w-10 h-10'/>
             </a> 
+            </div>
           </div>
 
           <div className="basis-1/2 flex-1">
             <Image src={web2} className="hover:shadow-[0_35px_60px_-15px_rgba(0,255,255)] rounded-lg object-cover" width={'100%'} height={'100%'} />
-            <a href="www.google.com">
-             <AiFillGithub/>
+            <div className='flex flex-row mt-10 justify-center gap-10 dark:text-white'>
+            <a href="https://github.com/V4L3N7Y/Quiz-Game">
+             <AiFillGithub className='w-10 h-10'/>
             </a> 
-            <a href="www.google.com">
-             <AiOutlineLink/>
+            <a href="https://vali-quiz.netlify.app">
+             <AiOutlineLink className='w-10 h-10'/>
             </a> 
+            </div>
           </div>
 
           <div className="basis-1/2 flex-1">
             <Image src={web3} className="hover:shadow-[0_35px_60px_-15px_rgba(0,255,255)] rounded-lg object-cover" width={'100%'} height={'100%'} />
-            <a href="www.google.com">
-             <AiFillGithub/>
+            <div className='flex flex-row mt-10 justify-center gap-10 dark:text-white'>
+            <a href="https://github.com/V4L3N7Y/Exp-Tracker">
+             <AiFillGithub className='w-10 h-10'/>
             </a> 
-            <a href="www.google.com">
-             <AiOutlineLink/>
+            <a href="https://vali-exp-tracker.netlify.app">
+             <AiOutlineLink className='w-10 h-10'/>
             </a> 
+            </div> 
           </div>
 
           <div className="basis-1/2 flex-1">
             <Image src={web4} className="hover:shadow-[0_35px_60px_-15px_rgba(0,255,255)] rounded-lg object-cover" width={'100%'} height={'100%'} />
-            <a href="www.google.com">
-             <AiFillGithub/>
+            <div className='flex flex-row mt-10 justify-center gap-10 dark:text-white'>
+            <a href="https://github.com/V4L3N7Y/3CardColumnCssFront">
+             <AiFillGithub className='w-10 h-10'/>
             </a> 
-            <a href="www.google.com">
-             <AiOutlineLink/>
+            <a href="https://3columscards.netlify.app">
+             <AiOutlineLink className='w-10 h-10'/>
             </a> 
+            </div> 
           </div>
         </div> 
          </section>
