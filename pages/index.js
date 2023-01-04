@@ -172,7 +172,7 @@ export default function Home() {
 
           <div className="basis-1/2 flex-1">
             <Image src={web4} className="hover:shadow-[0_35px_60px_-15px_rgba(0,255,255)] rounded-lg object-cover" width={'100%'} height={'100%'} />
-            <div className='flex flex-row mt-10 justify-center gap-10 dark:text-white'>
+            <div className='flex flex-row mt-10 mb-10 justify-center gap-10 dark:text-white'>
             <a href="https://github.com/V4L3N7Y/3CardColumnCssFront">
              <AiFillGithub className='w-10 h-10'/>
             </a> 
@@ -184,6 +184,18 @@ export default function Home() {
         </div> 
          </section>
       </main>
+
+      <footer class="p-4 bg-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-900">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Valentin™</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+       <form action="mailto:you@yourwebsite.com">
+          <li>
+             <a href="#" action="mailto:you@yourwebsite.com" class="hover:underline">Contact</a>
+          </li>
+       </form>    
+    </ul>
+</footer> 
 
     </div>
   )
