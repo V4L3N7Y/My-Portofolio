@@ -33,7 +33,7 @@ export default function Home() {
             <li>
               <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-white"/>
             </li>
-            <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href='https://pdfhost.io/v/a04I04NcO_resume'> <b>Resume</b> </a></li>
+            <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href='https://pdfhost.io/v/9O3D7LoS0_Black_Blue_Modern_Professional_CV_Resume_Template'> <b>Resume</b> </a></li>
           </ul>
           </nav>
           <div className="text-center p-10 dark:text-white">
