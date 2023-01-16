@@ -1,7 +1,6 @@
-
 import Head from 'next/head';
 import Image from 'next/image';
-import poza from './images/poza_profil.jpg';
+import poza from './images/poza_profil.png';
 import mancode from './images/developer.png';
 import aboutme from './images/about_me.png';
 import web1 from './images/web1.png';
@@ -9,7 +8,7 @@ import web2 from './images/web2.png';
 import web3 from './images/web3.png';
 import web4 from './images/web4.png';
 import {BsFillMoonStarsFill, BsDiscord} from "react-icons/bs";
-import { AiFillLinkedin, AiFillGithub, AiOutlineLink} from 'react-icons/ai'
+import { AiFillLinkedin, AiFillGithub, AiOutlineLink, AiOutlineMail} from 'react-icons/ai'
 import { SiJavascript, SiHtml5,
          SiCss3, SiReact, 
          SiNodedotjs, SiGithub} from 'react-icons/si'
@@ -33,7 +32,7 @@ export default function Home() {
             <li>
               <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-white"/>
             </li>
-            <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href='https://pdfhost.io/v/a04I04NcO_resume'> <b>Resume</b> </a></li>
+            <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href='https://pdfhost.io/v/8z2TsEYTc_Copy_of_Copy_of_Black_Blue_Modern_Professional_CV_Resume_Template'> <b>Resume</b> </a></li>
           </ul>
           </nav>
           <div className="text-center p-10 dark:text-white">
@@ -53,7 +52,7 @@ export default function Home() {
             </a>
           </div>
           
-            <div className="relative mx-auto overflow-hidden rounded-full bg-gray-600 w-60 h-70 lg:w-80 mt-20 ">
+            <div className="relative mx-auto overflow-hidden rounded-full shadow-2xl bg-gray-100 w-60 h-70 lg:w-80 mt-20 ">
               <Image src={poza}/>
             </div>
           
@@ -135,19 +134,19 @@ export default function Home() {
 
         <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
           <div className="basis-1/2 flex-1">
-            <Image src={web1}  className="hover:shadow-[0_35px_60px_-15px_rgba(0,255,255)] rounded-lg object-cover" width={'100%'} height={'100%'} />
-           <div className='flex flex-row mt-10 justify-center gap-10 dark:text-white'>
-            <a href='https://github.com/V4L3N7Y/OnlineShop'>
+            <Image src={web1}  className="hover:shadow-xl rounded-lg object-cover dark:hover:shadow-white/50" width={'100%'} height={'100%'} />
+           <div className='flex flex-row mt-10 justify-center gap-10 dark:text-white '>
+            <a href='https://github.com/V4L3N7Y/Online-Shop-Website'>
              <AiFillGithub className='w-10 h-10'/>
             </a> 
-            <a href="https://vali-onlineshop.netlify.app">
+            <a href="https://onlineshopvali.netlify.app">
              <AiOutlineLink className='w-10 h-10'/>
             </a> 
             </div>
           </div>
 
           <div className="basis-1/2 flex-1">
-            <Image src={web2} className="hover:shadow-[0_35px_60px_-15px_rgba(0,255,255)] rounded-lg object-cover" width={'100%'} height={'100%'} />
+            <Image src={web2} className="hover:shadow-xl rounded-lg object-cover dark:hover:shadow-white/50" width={'100%'} height={'100%'} />
             <div className='flex flex-row mt-10 justify-center gap-10 dark:text-white'>
             <a href="https://github.com/V4L3N7Y/Quiz-Game">
              <AiFillGithub className='w-10 h-10'/>
@@ -159,7 +158,7 @@ export default function Home() {
           </div>
 
           <div className="basis-1/2 flex-1">
-            <Image src={web3} className="hover:shadow-[0_35px_60px_-15px_rgba(0,255,255)] rounded-lg object-cover" width={'100%'} height={'100%'} />
+            <Image src={web3} className="hover:shadow-xl rounded-lg object-cover dark:hover:shadow-white/50" width={'100%'} height={'100%'} />
             <div className='flex flex-row mt-10 justify-center gap-10 dark:text-white'>
             <a href="https://github.com/V4L3N7Y/Exp-Tracker">
              <AiFillGithub className='w-10 h-10'/>
@@ -171,8 +170,8 @@ export default function Home() {
           </div>
 
           <div className="basis-1/2 flex-1">
-            <Image src={web4} className="hover:shadow-[0_35px_60px_-15px_rgba(0,255,255)] rounded-lg object-cover" width={'100%'} height={'100%'} />
-            <div className='flex flex-row mt-10 mb-10 justify-center gap-10 dark:text-white'>
+            <Image src={web4} className="hover:shadow-xl rounded-lg object-cover dark:hover:shadow-white/50" width={'100%'} height={'100%'} />
+            <div className='flex flex-row mt-10 mb-10 justify-center gap-10 dark:text-white '>
             <a href="https://github.com/V4L3N7Y/3CardColumnCssFront">
              <AiFillGithub className='w-10 h-10'/>
             </a> 
@@ -189,11 +188,8 @@ export default function Home() {
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Valentin™</a>. All Rights Reserved.
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
-       <form action="mailto:you@yourwebsite.com">
-          <li>
-             <a href="#" action="mailto:you@yourwebsite.com" class="hover:underline">Contact</a>
-          </li>
-       </form>    
+       <AiOutlineMail className='text-lg'/>
+       <a className='flex justify-center text-lg ml-1' href='mailto:valimihai154@yahoo.com'>Contact</a>    
     </ul>
 </footer> 
 
