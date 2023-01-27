@@ -1,8 +1,21 @@
 
-.bg-image {
-    background-image: url('https://i.pinimg.com/originals/ea/1d/97/ea1d9797c9bf3dda7a23b238e5e4b364.jpg');
-    background-size: cover;
+#bg-color {
+    background: linear-gradient(-45deg, #07003b, #081191, #058cbd, #0be6b3);
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 100vh;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100%;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

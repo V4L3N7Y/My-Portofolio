@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import poza from './images/poza_profil.png';
+import poza from './images/poza_profil.jpg';
 import mancode from './images/developer.png';
 import aboutme from './images/about_me.png';
 import web1 from './images/web1.png';
@@ -14,8 +14,13 @@ import { SiJavascript, SiHtml5,
          SiNodedotjs, SiGithub} from 'react-icons/si'
 import { useState } from "react";
 
+
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [background, setBackground] = useState(false);
+
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -24,20 +29,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gradient-to-r from-gray-900 via-indigo-900 to-gray-900">
+      <main id={background ? "bg-color" : ""} className="px-10 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
           <h1 className="text-xl font-tour font-bold dark:text-white">PORTOFOLIO</h1>
           <ul className="flex items-center">
             <li>
-              <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-white"/>
+              <BsFillMoonStarsFill onClick={() => {setDarkMode(!darkMode), setBackground(!background)}} className="cursor-pointer text-2xl dark:text-white"/>
             </li>
-            <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href='https://pdfhost.io/v/8z2TsEYTc_Copy_of_Copy_of_Black_Blue_Modern_Professional_CV_Resume_Template'> <b>Resume</b> </a></li>
+            <li><a id={background ? "" : "bg-color"} className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 dark:bg-none" href='https://pdfhost.io/v/8z2TsEYTc_Copy_of_Copy_of_Black_Blue_Modern_Professional_CV_Resume_Template'> <b>Resume</b> </a></li>
             
           </ul>
           </nav>
           <div className="text-center p-10 dark:text-white">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl "><b>Nastase Valentin</b></h2>
+            <h2  className="text-5xl py-2 text-teal-600 font-medium md:text-6xl"><b>Nastase Valentin</b></h2>
             <h3 className="text-md py-5 leading-8 text-grey-800 md:text-xl max-w-xl mx-auto ">FrontEnd Developer</h3>
             <p><i>“Everyone in this country should learn how to program because it teaches you how to think” – Steve Jobs.</i></p>
           </div>
@@ -69,7 +74,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex justify-around gap-5 sm:gap-10 mx-auto">
-            <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-900">
+            <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-700">
               <Image src={mancode} height={100} width={200} className="mx-auto"/>
               <hr/>
               <h3 className="text-2xl font-medium pt-8 pb-2 dark:text-white"><b>Skills</b></h3>
@@ -107,7 +112,7 @@ export default function Home() {
               </div> 
             </div>
 
-            <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-900">
+            <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-700">
               <Image src={aboutme} height={100} width={200} className=" shadow-xl overflow-hidden rounded-full mx-auto"/>
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white"><b>About Me</b></h3>
               <hr/>
@@ -185,7 +190,7 @@ export default function Home() {
          </section>
       </main>
 
-      <footer class="p-4 bg-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-900">
+      <footer class="p-4 bg-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-700">
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Valentin™</a>. All Rights Reserved.
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
