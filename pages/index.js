@@ -33,7 +33,7 @@ export default function Home() {
               <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-white"/>
             </li>
             <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href='https://pdfhost.io/v/8z2TsEYTc_Copy_of_Copy_of_Black_Blue_Modern_Professional_CV_Resume_Template'> <b>Resume</b> </a></li>
-            <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href='https://pdfhost.io/v/9O3D7LoS0_Black_Blue_Modern_Professional_CV_Resume_Template'> <b>Resume</b> </a></li>
+            
           </ul>
           </nav>
           <div className="text-center p-10 dark:text-white">
@@ -68,40 +68,40 @@ export default function Home() {
             My sense of humor helps keep things light and enjoyable in the workplace.
             </p>
           </div>
-          <div className="lg:flex justify-around gap-10 mx-auto">
+          <div className="lg:flex justify-around gap-5 sm:gap-10 mx-auto">
             <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-900">
               <Image src={mancode} height={100} width={200} className="mx-auto"/>
               <hr/>
               <h3 className="text-2xl font-medium pt-8 pb-2 dark:text-white"><b>Skills</b></h3>
-              <div className='text-lg grid text-neutral-500 grid-cols-2 justify-center gap-16 py-3  font-medium md:text-6xl dark:text-white'>
+              <div className='text-lg grid text-neutral-500 grid-cols-2 justify-center gap-16 py-3 items-center font-medium md:text-6xl dark:text-white'>
              
                <a className="dark:text-white">
-                <SiHtml5 className='h-10 w-10 mx-auto'/>
-                <p className='text-4xl'>Html</p>
+                <SiHtml5 className='h-7 w-10 mx-auto sm:h-10'/>
+                <p className='text-3xl sm:text-4xl'>Html</p>
                </a> 
-               <a className="dark:text-white">
-                <SiJavascript className='h-10 w-10 mx-auto'/>
-                <p className='text-3xl'>Javascript</p>
-               </a> 
-                
-               <a className="dark:text-white">
-               <SiCss3 className='h-10 w-10 mx-auto'/>
-                <p className='text-4xl'>Css3</p>
+               <a className="dark:text-white mx-auto">
+                <SiJavascript className='h-7 w-10 mx-auto sm:h-10'/>
+                <p className='text-2xl sm:text-4xl'>Javascript</p>
                </a> 
                 
-               <a className="dark:text-white">
-                <SiReact className='h-10 w-10 mx-auto'/>
-                <p className='text-4xl'>React</p>
+               <a className="dark:text-white mx-auto">
+               <SiCss3 className='h-7 w-10 mx-auto sm:h-10'/>
+                <p className='text-3xl sm:text-4xl'>Css3</p>
+               </a> 
+                
+               <a className="dark:text-white mx-auto">
+                <SiReact className='h-7 w-10 mx-auto sm:h-10'/>
+                <p className='text-3xl sm:text-4xl'>React</p>
                </a>
 
-               <a className="dark:text-white">
-                <SiNodedotjs className='h-10 w-10 mx-auto'/>
-                <p className='text-4xl'>Node.js</p>
+               <a className="dark:text-white mx-auto">
+                <SiNodedotjs className='h-7 w-10 mx-auto sm:h-10'/>
+                <p className='text-3xl sm:text-4xl'>Node.js</p>
                </a>
 
-               <a className="dark:text-white">
-                <SiGithub className='h-10 w-10 mx-auto'/>
-                <p className='text-4xl'>Github</p>
+               <a className="dark:text-white mx-auto">
+                <SiGithub className='h-7 w-10 mx-auto sm:h-10'/>
+                <p className='text-3xl sm:text-4xl'>Github</p>
                </a>
 
               </div> 
