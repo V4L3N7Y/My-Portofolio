@@ -10,6 +10,6 @@ Link to the my portofolio: https://vali-portofolio.netlify.app
 
 ## The stack that i've worked with:
 
-Next.js , Taliwind. React Icons
+Next.js, Taliwind, React Icons
 
 
