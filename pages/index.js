@@ -178,10 +178,10 @@ export default function Home() {
           <div className="basis-1/2 flex-1">
             <Image src={web4} className="hover:shadow-xl rounded-lg object-cover dark:hover:shadow-white/50" width={'100%'} height={'100%'} />
             <div className='flex flex-row mt-10 mb-10 justify-center gap-10 dark:text-white '>
-            <a href="https://github.com/V4L3N7Y/3CardColumnCssFront">
+            <a href="https://github.com/V4L3N7Y/Piano">
              <AiFillGithub className='w-10 h-10'/>
             </a> 
-            <a href="https://3columscards.netlify.app">
+            <a href="https://pianovali.netlify.app">
              <AiOutlineLink className='w-10 h-10'/>
             </a> 
             </div> 
