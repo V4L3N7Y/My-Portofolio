@@ -74,45 +74,42 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex justify-around gap-5 sm:gap-10 mx-auto">
-            <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-700">
-              <Image src={mancode} height={100} width={200} className="mx-auto"/>
-              <hr/>
+          <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-500">
+              <Image src={mancode} height={100} width={200} className="shadow-xl overflow-hidden rounded-full mx-auto"/>
+              
               <h3 className="text-2xl font-medium pt-8 pb-2 dark:text-white"><b>Skills</b></h3>
-              <div className='text-lg grid text-neutral-500 grid-cols-2 justify-center gap-16 py-3 items-center font-medium md:text-6xl dark:text-white'>
+              <hr/>
+              <div className='text-lg grid px-10 text-neutral-500 grid-cols-2 justify-center gap-16 py-10 items-center font-medium md:text-6xl dark:text-white'>
              
-               <a className="dark:text-white">
+               <a className="dark:text-white mx-auto lg:px-10">
                 <SiHtml5 className='h-7 w-10 mx-auto sm:h-10'/>
-                <p className='text-3xl sm:text-4xl'>Html</p>
                </a> 
+
                <a className="dark:text-white mx-auto">
                 <SiJavascript className='h-7 w-10 mx-auto sm:h-10'/>
-                <p className='text-2xl sm:text-4xl'>Javascript</p>
                </a> 
                 
                <a className="dark:text-white mx-auto">
                <SiCss3 className='h-7 w-10 mx-auto sm:h-10'/>
-                <p className='text-3xl sm:text-4xl'>Css3</p>
                </a> 
                 
                <a className="dark:text-white mx-auto">
                 <SiReact className='h-7 w-10 mx-auto sm:h-10'/>
-                <p className='text-3xl sm:text-4xl'>React</p>
                </a>
 
                <a className="dark:text-white mx-auto">
                 <SiNodedotjs className='h-7 w-10 mx-auto sm:h-10'/>
-                <p className='text-3xl sm:text-4xl'>Node.js</p>
                </a>
 
                <a className="dark:text-white mx-auto">
                 <SiGithub className='h-7 w-10 mx-auto sm:h-10'/>
-                <p className='text-3xl sm:text-4xl'>Github</p>
                </a>
 
               </div> 
+              <hr/>
             </div>
 
-            <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-700">
+            <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-500">
               <Image src={aboutme} height={100} width={200} className=" shadow-xl overflow-hidden rounded-full mx-auto"/>
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white"><b>About Me</b></h3>
               <hr/>
