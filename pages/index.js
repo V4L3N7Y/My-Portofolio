@@ -37,7 +37,7 @@ export default function Home() {
             <li>
               <BsFillMoonStarsFill onClick={() => {setDarkMode(!darkMode), setBackground(!background)}} className="cursor-pointer text-2xl dark:text-white"/>
             </li>
-            <li><a id={background ? "" : "bg-color"} className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 dark:bg-none" href='https://pdfhost.io/v/8z2TsEYTc_Copy_of_Copy_of_Black_Blue_Modern_Professional_CV_Resume_Template'> <b>Resume</b> </a></li>
+            <li><a id={background ? "" : "bg-color"} className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 dark:bg-none" href='https://pdfhost.io/v/WppxN4HQT_Nastase_Valentin'> <b>Resume</b> </a></li>
             
           </ul>
           </nav>
@@ -74,7 +74,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex justify-around gap-5 sm:gap-10 mx-auto">
-          <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-500">
+          <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-slate-100">
               <Image src={mancode} height={100} width={200} className="shadow-xl overflow-hidden rounded-full mx-auto"/>
               
               <h3 className="text-2xl font-medium pt-8 pb-2 dark:text-white"><b>Skills</b></h3>
@@ -109,7 +109,7 @@ export default function Home() {
               <hr/>
             </div>
 
-            <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-gray-500">
+            <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-slate-100 ">
               <Image src={aboutme} height={100} width={200} className=" shadow-xl overflow-hidden rounded-full mx-auto"/>
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white"><b>About Me</b></h3>
               <hr/>
@@ -125,7 +125,7 @@ export default function Home() {
 
         {/* section three */}
          
-         <div className='text-center'>
+         <div className='text-center '>
            <h3 className="text-3xl py-1 mx-auto dark:text-white"><b>PROJECTS</b></h3>
 
            <p className="text-md py-2 pb-10 leading-8 text-gray-800 dark:text-white">
@@ -187,6 +187,35 @@ export default function Home() {
          </section>
       </main>
 
+          <div className="w-full px-12 h-80 py-10 rounded-lg shadow-shadowOne flex items-center bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-black hover:to-[#1e2024] transition-colors duration-100 group">
+      <div className="h-72 overflow-y-hidden">
+        <div className="flex h-full flex-col gap-10 translate-y-16 group-hover:translate-y-0 transition-transform duration-500">
+          <div className="w-10 h-8 flex flex-col justify-between">
+        
+            
+              <span className="text-5xl text-designColor"></span>
+          
+              <>
+                <span className="w-full h-[2px] rounded-lg bg-designColor inline-flex"></span>
+                <span className="w-full h-[2px] rounded-lg bg-designColor inline-flex"></span>
+                <span className="w-full h-[2px] rounded-lg bg-designColor inline-flex"></span>
+                <span className="w-full h-[2px] rounded-lg bg-designColor inline-flex"></span>
+              </>
+            
+          </div>
+          <div className="flex flex-col gap-6">
+            <h2 className="text-xl md:text-2xl font-titleFont font-bold text-gray-300">
+              asas
+            </h2>
+            <p className="base">asassfqfasf</p>
+            <span className="text-2xl text-designColor">
+              
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
       <footer class="p-4 bg-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-700">
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Valentin™</a>. All Rights Reserved.
     </span>
@@ -199,3 +228,5 @@ export default function Home() {
     </div>
   )
 }
+
+

@@ -1,6 +1,6 @@
 
 #bg-color {
-    background: linear-gradient(-45deg, #07003b, #081191, #058cbd, #0be6b3);
+    background: linear-gradient(-45deg, #000000, #3b3b3b, #737373, #ababab);
     background-attachment: fixed;
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
