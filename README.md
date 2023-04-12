@@ -2,7 +2,7 @@
 
 Link to my netlify: https://app.netlify.com/teams/valimihai154/overview
 
-Link to the my portofolio: https://vali-portofolio.netlify.app
+Link to the my portofolio website: https://vali-portofolio.netlify.app
 
 
 
