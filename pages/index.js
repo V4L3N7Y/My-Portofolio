@@ -42,7 +42,7 @@ export default function Home() {
           </ul>
           </nav>
           <div className="text-center p-10 dark:text-white">
-            <h2  className="text-5xl py-2 text-teal-600 font-medium md:text-6xl"><b>Nastase Valentin</b></h2>
+            <h2  className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-white"><b>Nastase Valentin</b></h2>
             <h3 className="text-md py-5 leading-8 text-grey-800 md:text-xl max-w-xl mx-auto ">FrontEnd Developer</h3>
             <p><i>“Everyone in this country should learn how to program because it teaches you how to think” – Steve Jobs.</i></p>
           </div>
@@ -74,7 +74,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex justify-around gap-5 sm:gap-10 mx-auto">
-          <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-slate-100">
+          <div className="text-center rounded-lg bg-slate-100 shadow-xl p-10 my-10 dark:bg-slate-500">
               <Image src={mancode} height={100} width={200} className="shadow-xl overflow-hidden rounded-full mx-auto"/>
               
               <h3 className="text-2xl font-medium pt-8 pb-2 dark:text-white"><b>Skills</b></h3>
